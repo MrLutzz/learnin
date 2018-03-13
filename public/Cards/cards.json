@@ -1,0 +1,9 @@
+{
+    "Name":"Pack",
+    "Author":"Admin",
+    "Cards":[
+        {"Front":"Front1","Back":"Back1"},
+        {"Front":"Front2","Back":"Back2"},
+        {"Front":"Front3","Back":"Back3"}
+    ]
+}
