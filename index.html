@@ -1,18 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hacker</title>
-    <style media="screen">
-      body {
-        background-color:#333333;
-        color: #00FF00;
-        font-family: Consolas;
-
-      }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDb7Lkvp0JzoqVD2e6LYZkYYfh6vRHdUD8",
+            authDomain: "learnin-aaf06.firebaseapp.com",
+            databaseURL: "https://learnin-aaf06.firebaseio.com/",
+            projectId: "learnin-aaf06",
+            storageBucket: "learnin-aaf06.appspot.com",
+            messagingSenderId: "530598018506"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <style>
+        body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+        #card { background: white; max-width: 500PX; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+        #card h1 { color: #ffa100; font-weight: bold; font-size: 20px; margin: 0 0 8px; }
+        #card p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+        #card a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+        #card, #card a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+        #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+        button {background-color: white; color:black; border-width: 1px; border-color: #EEEEEE; border-style: solid; padding:7px 20px; border-radius: 2px; margin-left: 5px;}
+        #FLIP { color:white; background-color: #ffa100; border:none; padding:7px 20px; border-radius: 2px;}
+        @media (max-width: 600px) {
+            body, #card { margin-top: 100px;}
+        }
     </style>
-  </head>
-  <body>
-    SETTING UP, MOVE ALONG
-  </body>
+</head>
+<body>
+    <script defer src="main.js"></script>
+    <div id="card">
+        <h1 id="TITLE">${title}</h2>
+        <p id="QUESTION">${question}</p>
+        <button id="FLIP">FLIP</button>
+        <button id="P" style="float:right;">Previous</button>
+        <button id="N" style="float:right;">Next</button>
+    </div>
+</body>
 </html>
