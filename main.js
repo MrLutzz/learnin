@@ -18,6 +18,9 @@ if(id!==null){
 }
 var pack = getUrlParameter("pack");
 var firestore = firebase.firestore();
+
+if(pack === undefined) pack = "Pack1";
+
 var datastore = firestore.collection("Pack1").doc(pack);
 var docData="nil";
 var side=false;
