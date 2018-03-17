@@ -1,0 +1,19 @@
+#modalBox{
+  display: none;
+  background-color: rgba(255,124,10,0.3);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#modalBox button{
+  height: 10vh;
+  width: 10vw;
+}
+
+#modalBoxControls{
+  border: 1px solid red;
+  transform: translate(25vw,25vh);
+  width: 50vw;
+  height: 50vh;
+}

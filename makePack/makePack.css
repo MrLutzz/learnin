@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #ECEFF1;
+  color: rgba(0,0,0,0.87);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+#controls{
+  overflow: auto;
+  display: block;
+  padding: 5vw;
+}
+
+#controls button{
+  color: red;
+  width: 42.5vw;
+  height: 10vh;
+  border: none;
+  margin: 5vh 0 0 0;
+}
+
+#saveContol{
+  float: left;
+}
+
+#deleteControl{
+  float: right;
+}
+
+button{
+  margin: 5vw 0 0 5vw;
+  width: 40vw;
+  height: 40vw;
+  flex-wrap: wrap;
+}
