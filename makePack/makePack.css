@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-size: 40px;
 }
 
 body {
@@ -23,11 +24,11 @@ body {
   margin: 5vh 0 0 0;
 }
 
-#saveContol{
+#savePack{
   float: left;
 }
 
-#deleteControl{
+#deletePack{
   float: right;
 }
 
